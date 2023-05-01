@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Museum</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/webp" href="./images/favicon.png">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Museum Age Check</h1>
+    <form id="converter-form">
+      <div class="form-group">
+        <label for="Age-Check">Age:</label>
+        <input type="number" step="0" id="Age" required>
+        <label for="Day-Check">Day:</label>
+        <input list="Day-List" name="Day-List" id="Day" required=true>
+        <datalist id="Day-List">
+          <option value="Sunday">
+          <option value="Monday">
+          <option value="Tuesday">
+          <option value="Wednesday">
+          <option value="Thursday">
+          <option value="Friday">
+          <option value="Saturday">
+        </datalist>
+      </div>
+      <button type="submit" id="convert-btn">Check</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
